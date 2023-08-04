@@ -42,4 +42,4 @@ plot_healpix(data_healpix)
 
 ### Authors
 
-Nikolay Koldunov, Boris Shapkin.
+Boris Shapkin, Nikolay Koldunov.
