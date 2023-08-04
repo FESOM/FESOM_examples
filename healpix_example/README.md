@@ -39,6 +39,13 @@ data_healpix,sel_time,sel_depth = to_healpix(data, lon,lat, zoom = 8)
 ```python
 plot_healpix(data_healpix)
 ```
+ - #### Interactive visualisation
+HEALpy allows to make quick and nice interactive visualisation using [zoomtool](https://healpy.readthedocs.io/en/latest/healpy_zoomtool.html). You can use it with the plot_healpix:
+```python
+plot_healpix(data_healpix, interactive = True)
+```
+![](https://github.com/FESOM/FESOM_examples/assets/80640421/c59c9387-b744-4bd6-bedb-008d6a08cfd4)
+
 
 ### Authors
 
