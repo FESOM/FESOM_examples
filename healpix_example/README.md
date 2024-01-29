@@ -74,7 +74,7 @@ for z in range(0,10):
     # Execute the command
     subprocess.run(command)
 ```
-The get_mask function from [pyfesom2]([https://healpy.readthedocs.io/en/latest/index.html](https://github.com/FESOM/pyfesom2/tree/main)) was implemented to do calculations for specific regions on HEALPix grid
+The get_mask function from [pyfesom2](https://github.com/FESOM/pyfesom2/tree/main) was implemented to do calculations for specific regions on HEALPix grid
 ```python
 mask1 = get_mask(lon_healpy,lat_healpy, "Atlantic_Basin")
 depth = 0
