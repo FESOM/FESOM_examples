@@ -4,7 +4,7 @@ Upload mesh to Zenodo.
 
 Usage::
 
-    $ mesh2zenodo <PATH>
+    $ upload_to_zenodo.py <PATH>
 """
 
 import os
