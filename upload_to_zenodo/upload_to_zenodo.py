@@ -14,13 +14,15 @@ import click
 import questionary
 import requests
 
-ZENODO_API_URL = "https://sandbox.zenodo.org/api/deposit/depositions"
+ZENODO_API_URL = "https://zenodo.org/api/deposit/depositions"
+"""str : the URL to communicate to the Zenodo API"
 
 DEPOSITION_METADATA = {
     "upload_type": "dataset",
     # FIXME: Something like FESOM2 Meshes should go here
     "communities": [{"identifier": "fesom2_meshes_sandbox_testing"}],
 }
+"""dict : metadata you want attached to your upload"""
 
 
 def upload_file(file_path, deposition_bucket, access_token):
