@@ -72,10 +72,10 @@ def main():
     ddx = diag['gradient_sca_x'].astype('float32')
     ddy = diag['gradient_sca_y'].astype('float32')
     ###### for old FESOM2 versions 
+    ddx = ddx[2,1,0]
+    ddy = ddy[2,1,0]
     elems = (diag['elements']-1).T.astype('int')  #element indices are saved in Fortran format, starting from 1 instead of 0
-    elems = elems[:, [0, 2, 1]] #element indices are in the wrong order from Fortran!!!!!!
-    ###### for new FESOM2 versions
-    # elems = (diag['elements']-1).astype('int')
+
     
     mesh = load_mesh(mesh_path)
 
