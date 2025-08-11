@@ -72,8 +72,10 @@ def main():
     ddx = diag['gradient_sca_x'].astype('float32')
     ddy = diag['gradient_sca_y'].astype('float32')
     ###### for old FESOM2 versions 
-    ddx = ddx[2,1,0]
-    ddy = ddy[2,1,0]
+    
+    ddx = ddx.isel(n3=[2, 1, 0]).compute()
+    ddy = ddy.isel(n3=[2, 1, 0]).compute()
+
     elems = (diag['elements']-1).T.astype('int')  #element indices are saved in Fortran format, starting from 1 instead of 0
 
     
